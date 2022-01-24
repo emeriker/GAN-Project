@@ -4,7 +4,7 @@ Generative Adversarial Networks - Personal Project
 # SETUP
 - Install dependency from 'requirements.txt'
 
-- Dowload images you want to use as dataset
+- Dowload images you want to use as dataset (Ex : https://www.kaggle.com/scolianni/mnistasjpg)
 - Create a directory of the images
 - Inside the directory create another directory called 'targets'
 - Put all the downloaded images inside the target directory
