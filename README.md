@@ -1,9 +1,11 @@
 # GAN-Project
 Generative Adversarial Networks - Personal Project
 
-# SETUP
-- Install dependency from 'requirements.txt'
+# Requirements
+- python 3.9.9
+- python -m pip install -r requirements.txt
 
+# SETUP
 - Dowload images you want to use as dataset (Ex : https://www.kaggle.com/scolianni/mnistasjpg)
 - Create a directory of the images
 - Inside the directory create another directory called 'targets'
@@ -11,5 +13,5 @@ Generative Adversarial Networks - Personal Project
 
 - Open the 'main' notebook and set the 'data_dir' variable to the directory containing 'targets' 
 
-- Run the whole notebook
+- Run the whole notebook (main.pynb)
 - Done !
