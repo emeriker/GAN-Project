@@ -175,12 +175,13 @@ def train_step(
     discriminator_optimizer.apply_gradients(zip(gradients_of_discriminator, discriminator.trainable_variables))
 
 def discriminator_loss(cross_entropy, real_output, fake_output):
-    """[Discriminator loss function]
+    """
+    [Discriminator loss function]
 
     Args:
-        cross_entropy ([type]): [tf cross entropy]
-        real_output ([type]): [Discriminator output of loss function of real images]
-        fake_output ([type]): [Discriminator output of loss function of fake images]
+        cross_entropy (tf.keras.losses.BinaryCrossentropy): [tf cross entropy]
+        real_output (tf.data.Dataset): [Discriminator output of loss function of real images]
+        fake_output (tf.data.Dataset): [Discriminator output of loss function of fake images]
 
     Returns:
         (tensorflow object): [tf cross entropy result]
@@ -195,8 +196,8 @@ def generator_loss(cross_entropy, fake_output):
     [Generator loss function]
 
     Args:
-        cross_entropy ([type]): [tf cross entropy]
-        fake_output ([type]): [Discriminator output of loss function of fake images]
+        cross_entropy (tf.keras.losses.BinaryCrossentropy): [tf cross entropy]
+        fake_output (tf.data.Dataset): [Discriminator output of loss function of fake images]
 
     Returns:
         (tensorflow object): [tf cross entropy result]
